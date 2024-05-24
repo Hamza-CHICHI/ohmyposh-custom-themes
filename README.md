@@ -4,8 +4,16 @@
 
 This is a preview of my Windows Terminal with my custom Oh-My-Posh theme
 
+### Windows Powershell
+
 <p align="center">
-<img src="preview/theme_preview.png" alt="windows-terminal">
+<img src="preview/windows_theme_preview.png" alt="windows-terminal">
+</p>
+
+### Windows WSL/Ubuntu
+
+<p align="center">
+<img src="preview/ubuntu_theme_preview.png" alt="ubuntu-terminal">
 </p>
 
 It can also be integrated with vs code terminal too !!
