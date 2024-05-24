@@ -88,6 +88,73 @@ oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\energy.omp.json' | Invoke-E
 > For more details, refer to the oh-my-posh doc Windows installation  : https://ohmyposh.dev/docs/installation/windows
 
 
+## Windows WSL/Ububtu : Installation and setup
+
+- Install the WSL Ubuntu terminal from microsoft store
+
+- Install `unzip` as is it required for oh-my-posh installation
+
+```shell
+apt install unzip
+```
+
+
+- Install oh-my-posh CLI
+
+```shell
+curl -s https://ohmyposh.dev/install.sh | bash -s
+```
+
+
+- Install a Nerd Font with Oh My Posh has CLI ( for me I installed the JetBrains Mono font) 
+
+```shell
+oh-my-posh font install JetBrainsMono
+```
+
+- Choose this font from your teminal windows settings
+
+    - Settings > Profile > Default > Scroll to Apparence > Police type > And choose your favorite nerd font that you downloaded
+
+---
+- <i>This step is optional : </i>
+    - <i>You can import my settings from this repo <a href="windows-terminal-settings/settings.json">settings.json</a> and apply it to you Windows terminal by going to <b>Settings > Bottom left > Open Json File > And Paste my json</b> </i>
+> ⚠️ Make a backup of your settings.json first
+---
+
+- Configure your shell to use Oh My Posh
+
+```shell
+eval "$(oh-my-posh init bash)"
+```
+
+- Create the oh my posh theme directory and downloand the energy theme
+
+```shell
+mdkir ~/.poshthemes
+cd ~/.poshthemes
+wget https://raw.githubusercontent.com/Hamza-CHICHI/ohmyposh-custom-themes/main/energy.omp.json
+```
+
+- Now apply the theme
+
+```shell
+eval "$(oh-my-posh init bash --config ~/.poshthemes/energy.omp.json)"
+```
+
+- If everything is working correcty added it to your profile so next time it loads automatically
+
+```shell
+## Apply 
+echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/energy.omp.json)"' >> ~/.bashrc
+## Restart bash 
+exec bash
+```
+
+> For more details, refer to the oh-my-posh doc Linux installation  : https://ohmyposh.dev/docs/installation/linux
+
+
+
 ### By [Hamza-CHICHI][Hamza-CHICHI]
  
 
