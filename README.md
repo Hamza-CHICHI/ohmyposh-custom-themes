@@ -139,7 +139,7 @@ eval "$(oh-my-posh init bash)"
 - Create the oh my posh theme directory and downloand the energy theme
 
 ```shell
-mdkir ~/.poshthemes
+mkdir ~/.poshthemes
 cd ~/.poshthemes
 wget https://raw.githubusercontent.com/Hamza-CHICHI/ohmyposh-custom-themes/main/energy.omp.json
 ```
